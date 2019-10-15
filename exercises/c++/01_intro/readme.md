@@ -1,6 +1,7 @@
 # Exercises - session 01
 
-## Understanding compiler messages
+## Understanding compiler messages 
+## (OK)
 - Take a simple program (e.g., the hello world one) and put one at a time the following errors. Compile it and try to understand the error messages. If you have both `g++` and `clang++` compare the messages from the two compilers.
   - do not put the `main` function
   - typos in function name (e.g., `c0ut`)
@@ -11,6 +12,7 @@
 
 
 ## uniq
+## (OK)
 - Write a simple version of the Unix program `uniq -c`, which, when fed with a text, outputs the same text with **consecutive** identical lines collapsed to one prepended with the number of repetitions
 
 *Hints*: you can scan the stdin as follows
@@ -65,7 +67,7 @@ std::cin.ignore();
 ```
 
 ## Units of measure
-
+## (OK)
 - Write a code that reads a number with its proper unit of measure, and prints back that number according to the SI units, e.g.
 
 ```
@@ -74,4 +76,5 @@ std::cin.ignore();
 ```
 
 ## **Optional**: Text formatter
+## (OK)
 - Write a simple text formatter that breaks the lines longer than a given number of characters. This formatter does not break words and leaves unmodified the lines shorter than the given threshold.

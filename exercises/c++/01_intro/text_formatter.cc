@@ -16,16 +16,17 @@ int main() {
     return 0;
 }
 
-
-
 void break_line(unsigned int n, std::string line) {
     unsigned int space1{0};
     unsigned int space2{0};
     while(space2 < n){
         space1 = line.find(" ", space1+1); 
         space2 = line.find(" ", space1+1); 
-        std::cout << space2 << "," << space2 << "\n";
     }
     std::cout << line.substr(0,space1) << "\n";
-    std::cout << line.substr(space1+1) << "\n";
+    if(line.substr(space1+1).length() > n){
+        break_line(n, line.substr(space1+1));
+    } else {
+        std::cout << line.substr(space1+1) << "\n";
+    }
 }
